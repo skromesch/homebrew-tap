@@ -25,7 +25,7 @@ cask "agent-audit" do
   end
 
   name "agent-audit"
-  desc "Audit AI coding agent configurations in your project — detect tools, MCP servers, skills, secrets, and misconfigurations across all major ecosystems."
+  desc "Audit AI coding agent configs for secrets, MCP servers, and misconfigurations"
   homepage "https://github.com/skromesch/agent-audit"
 
   livecheck do
