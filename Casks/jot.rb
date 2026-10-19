@@ -1,6 +1,6 @@
 cask "jot" do
-  version "1.0"
-  sha256 "a2e907738f78700adadaec5013b85af891d301865c69a203176414f4ab089856"
+  version "1.1"
+  sha256 "59bf469b46ee2b05f888d27ba063ce147c4ac94e036713f2488df020044fbd47"
 
   url "https://github.com/skromesch/jot/releases/download/v#{version}/Jot-#{version}.zip"
   name "Jot"
@@ -15,12 +15,6 @@ cask "jot" do
   depends_on macos: :ventura
 
   app "jot.app", target: "Jot.app"
-
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Jot.app"],
-                   sudo: false
-  end
 
   zap trash: "~/Library/Preferences/com.skromesch.jot.plist"
 end
