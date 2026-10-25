@@ -1,19 +1,19 @@
 cask "docgraph" do
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     on_arm do
-      sha256 "1c9a0781682f2bdf96ac672048db6b290f7550f167def5436ea7b235b61724ee"
+      sha256 "edb26be9d2b33189c9b2c3e565bb48b275d5eb98a3dee64c22f1b6eca2ff8438"
       url "https://github.com/skromesch/docgraph/releases/download/v#{version}/docgraph_darwin_arm64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "4c65f4d8aec4f309a31dcb59cec8d2941defaef6df55395411f5d3183751843a"
+      sha256 "45b6386b12bbeeb77269354eb804b0e4a87dd03f7cdc0ce68986e032a6bb8133"
       url "https://github.com/skromesch/docgraph/releases/download/v#{version}/docgraph_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ec6673851b44ded9aa6dd02641a97f9547a582e1799edd7c9a6c484a19438cb6"
+      sha256 "f742bb2286a723003c17121b3b65f64f227ec24164d7c6ed377cad94ad52cfc7"
       url "https://github.com/skromesch/docgraph/releases/download/v#{version}/docgraph_linux_amd64.tar.gz"
     end
   end
